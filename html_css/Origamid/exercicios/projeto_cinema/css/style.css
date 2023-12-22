@@ -1,0 +1,18 @@
+.darkred {
+  color: darkred;
+}
+.darkblue {
+  color: darkblue;
+}
+.noline {
+  text-decoration: none;
+}
+.tamanho {
+  font-size: 20px;
+}
+.seagreen {
+  color: seagreen;
+}
+* {
+  font-family:Arial;
+}
