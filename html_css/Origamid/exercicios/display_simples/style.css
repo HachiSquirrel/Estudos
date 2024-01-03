@@ -1,0 +1,46 @@
+* {
+    font-family: Arial;
+}
+/*  mudar a fonte de todo o site */
+
+h1 {
+   text-align: center; 
+   font-size: 40px;
+}
+
+.item {
+    background: #111;
+    color: #FFF;
+    padding: 30px;
+    /* separa o conteúdo das bordas da caixa */
+    margin: 20px;
+    /* define a distância entre uma caixa e outra */
+    border-radius: 4px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2 {
+    margin: 0px;
+}
+/* para remover a somátoria da margens do h2 com o .item */
+
+p {
+    color: #b2b2b2;
+    /* mudar a cor da fonte */
+}
+
+span {
+    color: #febe01;
+    /* mudar a cor da fonte */
+}
+
+a {
+    display: inline-block;
+   background:#febe01 ; 
+   color: #332200;
+   padding: 10px;
+   border-radius: 4px;
+   text-decoration: none;
+}
+/* criação do botão com link */
