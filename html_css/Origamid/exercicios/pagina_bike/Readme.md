@@ -1,6 +1,6 @@
-<h1>Especificações</h1>
+<h1>Especificações<h1/>
 
-  <h2>Utilizar tags semânticas</h2>
+  <h2> Utilizar tags semânticas</h2>
   <p>nav, article, ul e outras. Utilizar aria-label quando possível.</p>
 
   <h2>Modificar as unidades</h2>
