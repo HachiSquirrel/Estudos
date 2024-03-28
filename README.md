@@ -1,2 +1,2 @@
 # Estudos
- Estudos de linguagens de marcação e programação
+ Estudos de linguagens de marcação, estilo e programação
