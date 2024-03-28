@@ -1,0 +1,203 @@
+html {
+  font-size: 62.5%;
+}
+/* tamanho da fonte para 62.5% do tamanho padrão do navegador, para facilitar a conversão de pixels em rem  */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* fonte */
+  margin: 0px;
+  /* remove a margem padrão */
+  background: #f7f7f7;
+  /* fundo */
+  display: grid;
+  /* permite que os elementos dentro do corpo sejam organizados em linhas e colunas */
+  gap: 6rem;
+  /* espaçamento uniforme entre os elementos */
+  justify-items: center;
+  /* alinhados ao centro horizontalmente */
+  margin-top: 6rem;
+  /*  cria um espaço entre o topo da página e o conteúdo */
+}
+/* layout do body como um grid com um espaçamento de 6rem entre as linhas, centralizando os itens horizontalmente e adicionando uma margem superior de 6rem. */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/*  imagens terão uma largura máxima de 100% do contêiner pai e serão exibidas como blocos. */
+
+a {
+  text-decoration: none;
+}
+/* remover decoração de texto */
+
+ul {
+  list-style: none;
+  /* tirar estilo de lista */
+  margin: 0px;
+  padding: 0px;
+  /* resetar margin e padding */
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+  /* tirar a margem padrão de parágrafos e cabeçalhos */
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.3em;
+  /* altura da linha */
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 6rem;
+}
+/*  itens centralizados em um grid e espaçamento de 6rem entre os elementos */
+
+.menu {
+  display: flex;
+  /* permite que seus itens sejam posicionados em uma linha ou coluna, dependendo da direção principal definida. */
+  flex-wrap: wrap;
+  /* itens do menu podem ser dispostos em várias linhas, garantindo que não sejam cortados em telas menores */
+  gap: 2rem;
+  justify-content: center;
+}
+
+.menu a {
+  display: block;
+  /* elementos de bloco, garantindo que cada link fique em uma linha separada */
+  background: #ffffff;
+  padding: 1.5rem 3rem;
+  /* preenchimento 1.5 vertical e 3 horizontal */
+  border-radius: 0.4rem;
+  /* borda arrendondada */
+  color: #000000;
+  text-transform: uppercase;
+  /* texto todo em maiúsculas */
+  border: 0.2rem solid transparent;
+  /* Borda de 0.2 rem, sólida e transparente para os links, só será visível quando houver interação */
+}
+
+.menu a:hover {
+  border-color: #ee2211;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100rem;
+}
+/*  um layout de grade para o conteúdo com duas colunas e uma largura máxima de 100rem */
+
+.introducao {
+  background: #ffffff;
+  padding: 4rem;
+  text-align: right;
+  /*  alinhamento do texto à direita */
+  position: relative;
+  /* como o elemento será posicionado */
+  display: grid;
+  gap: 2rem;
+  align-content: center;
+  /* Alinha o conteúdo ao centro */
+  justify-items: center;
+  /* Centraliza horizontalmente os itens dentro do grid  */
+}
+
+.introducao h1 {
+  font-size: 2.4rem;
+}
+
+/* pseudoelemento */
+.introducao::before {
+  content: "";
+  width: 6rem;
+  /* largura */
+  height: 0.4rem;
+  /* altura */
+  background: #ee2211;
+  /* display: inline-block; */
+  position: absolute;
+  /* posicionar um elemento de forma específica em relação ao seu contêiner pai: sobreposição de elementos */
+  top: 3rem;
+  /* posição 3rem a partir do top do contêiner pai */
+  right: -3rem;
+  /* posição a direita como -3rem, movendo para fora */
+}
+/* elemento decorativo */
+
+.botao {
+  background: #ee2211;
+  color: #ffffff;
+  padding: 1.5rem 3rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+/* estilos para os botões */
+
+.botao:hover {
+  background: #900;
+}
+/* quando o cursor passar por cima do item, ele irá para o vermelho escuro */
+
+.subtitulo {
+  font-size: 6.4rem;
+  text-transform: uppercase;
+  /* letras maiúsculas */
+  color: rgba(0, 0, 0, 0.2);
+  /* cor com opacidade de 20% */
+  text-align: right;
+  /* alinhar texto à direita */
+  padding: 4rem;
+  align-self: center;
+  /*  alinha o subtítulo verticalmente ao centro */
+  background-image: url("./img/onda.svg");
+  /* imagem será exibida atrás do texto */
+}
+
+.vantagens {
+  background: #ffffff;
+  padding: 4rem;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto, 1fr;
+  /*  o primeiro elemento de cada item se ajustará automaticamente ao conteúdo, e o segundo elemento ocupará o restante do espaço disponível. */
+  gap: 1rem 2rem;
+  padding: 2rem;
+  border-left: 0.3rem solid transparent;
+  /*  Define uma borda à esquerda de cada item com 0.3 rem de largura */
+}
+
+/* itens impares como cinza claro */
+.vantagens-item:nth-child(odd) {
+  background: #f7f7f7;
+}
+.vantagens-item:hover {
+  border-color: #ee2211;
+  /* cor da borda */
+}
+
+.vantagens-item p {
+  grid-column: 2;
+  /* parágrafos irão ocupar a segunda coluna do grid. */
+}
+
+.rodape {
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  /* centralizado horizontalmente */
+  padding: 4rem;
+  box-sizing: border-box;
+  /* preenchimento e a borda do rodapé estão incluídos na largura e altura total do elemento */
+}
+
+/* projeto não responsivo */
