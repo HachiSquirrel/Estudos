@@ -1,0 +1,205 @@
+html {
+    font-size: 62,5%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    margin: 0px;
+    gap: 6rem;
+    justify-items: center;
+    margin-top: 6rem;
+    background-color: #f7f7f7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  p,
+  h1,
+  h2,
+  h3 {
+  margin: 0px;
+}
+
+  p {
+    font-size: 2rem;
+    line-height: 1.3em;
+  }
+
+  .header {
+    display: grid;
+    justify-items: center;
+    gap: 6rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .menu a {
+    display: block;
+    background: #ffffff;
+    padding: 1.5rem 3rem;
+    border-radius: 0.4rem;
+    color: #000000;
+    text-transform: uppercase;
+     border: 0.2rem solid transparent;
+  }
+
+  .menu a:hover {
+    border-color: #ee2211;
+  }
+  
+  .conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100rem;
+  }
+  
+  .introducao {
+    background: #ffffff;
+    padding: 4rem;
+    text-align: right;
+    position: relative;
+    display: grid;
+    gap: 2rem;
+    align-content: center;
+    justify-items: center;
+  }
+  
+  .introducao h1 {
+    font-size: 2.4rem;
+  }
+
+  .introducao::before {
+    content: "";
+    width: 6rem;
+    height: 0.4rem;
+    background: #ee2211;
+    position: absolute;
+    top: 3rem;
+    right: -3rem;
+  }
+  /* elemento decorativo */
+
+  .intro-cover img {
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  .botao {
+    background: #ee2211;
+    color: #ffffff;
+    padding: 1.5rem 3rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  /* estilos para os botões */
+  
+  .botao:hover {
+    background: #900;
+  }
+  /* mudança de cor ao passar o cursor */
+
+  .subtitulo {
+    font-size: 6.4rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding: 4rem;
+    align-self: center;
+    background-image: url("./img/onda.svg");
+    /* word-break: break-all ; */
+
+  }
+
+  .vantagens {
+    background: #ffffff;
+    padding: 4rem;
+  }
+  
+  .vantagens-item {
+    display: grid;
+    grid-template-columns: auto, 1fr;
+    gap: 1rem 2rem;
+    padding: 2rem;
+    border-left: 0.3rem solid transparent;
+  }
+  
+  /* itens impares como cinza claro */
+  .vantagens-item:nth-child(odd) {
+    background: #f7f7f7;
+  }
+  .vantagens-item:hover {
+    border-color: #ee2211;
+    /* cor da borda */
+  }
+  
+  .vantagens-item p {
+    grid-column: 2;
+    /* parágrafos irão ocupar a segunda coluna do grid. */
+  }
+  
+  .rodape {
+    background: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 4rem;
+    box-sizing: border-box;
+  }
+/* definir break point */
+  @media (max-width: 100rem) {
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+    }
+  
+  .subtitulo {
+    text-align: center;
+     }
+  }
+
+  @media (max-width:60rem) {
+    body {
+        gap: 3rem;
+        margin: 2rem;
+    }
+    .header {
+        gap: 3rem;
+
+    }
+    .conteudo {
+        grid-template-columns: 1fr;
+    
+    .introducao {
+        text-align: left;
+        justify-items: start;
+    }
+
+    .introducao::before {
+        display: none;
+        /* sumir com o decorativo */
+        }
+    .subtitulo {
+        font-size: 3rem;
+    }
+
+        }
+    }
+  
