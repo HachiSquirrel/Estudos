@@ -1,4 +1,9 @@
-<h1>Especificações<h1/>
+<h1>Página Bikcraft - Não Responsiva<h1/>
+
+![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-480082?style=for-the-badge&logo=css3&logoColor=white)
+
+
 
   <h2> Utilizar tags semânticas</h2>
   <p>nav, article, ul e outras. Utilizar aria-label quando possível.</p>
