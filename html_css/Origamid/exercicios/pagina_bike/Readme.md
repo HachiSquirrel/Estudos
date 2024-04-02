@@ -19,20 +19,31 @@
 
   <h2>Pintar os itens ímpares</h2>
   <p>Das vantagens com o tom de cinza claro</p>
+  
   <h2>Usar Pseudo element ideal</h2>
 
   <h2>Cores</h2>
   <p>
   cinza-fundo: #f7f7f7
+  </p>
+  <p>
   cinza-texto: #c6c6c6
+  </p>
+  <p>
   vermelho: #ee2211
+  </p>
+  
   vermelho escuro: #900
   </p>
 
   <h2>Tipografia</h2>
   <p>
   fonte: Arial
+  </p>
+  <p>
   parágrafos: 20px
+  </p>
+  <p>
   Vantagens Bikcraft: 64px
   </p>
   
